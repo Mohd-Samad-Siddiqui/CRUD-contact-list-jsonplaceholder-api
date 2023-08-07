@@ -1,0 +1,17 @@
+.add-modal {
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+}
+.addUser-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(50, 50, 175);
+  color: #fff;
+}
+.addUser-btn:hover {
+  background-color: rgb(26, 26, 123);
+  transform: scale(1.05);
+  transition: 0.2s ease-out;
+}
