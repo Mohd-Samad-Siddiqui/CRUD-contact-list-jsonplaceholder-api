@@ -26,12 +26,7 @@ const UserList = ({ user, onDelete, onEdit }) => {
 
   const handleEditSubmit = (e) => {
     e.preventDefault();
-    onEdit(
-      user.id,
-      e.target.name.value,
-      e.target.city.value,
-      e.target.company.value
-    );
+    onEdit(user.id, e.target.name.value);
     setIsEdit(false);
   };
 
@@ -43,7 +38,7 @@ const UserList = ({ user, onDelete, onEdit }) => {
     <div className={`card ${isFlipped ? "flipped" : ""}`}>
       {!isFlipped ? (
         <div className="front-side">
-          <FaUserCircle size={50} color={"#29298A"} />
+          <FaUserCircle size={55} color={"#29298A"} />
           {isEdit ? (
             <form onSubmit={handleEditSubmit}>
               <input
@@ -53,29 +48,11 @@ const UserList = ({ user, onDelete, onEdit }) => {
                 defaultValue={user.name}
               />
               <br />
-              <input
-                type="text"
-                name="city"
-                placeholder="Enter city..."
-                defaultValue={user.address.city}
-              />
-              <br />
-              <input
-                type="text"
-                name="company"
-                placeholder="Enter company name..."
-                defaultValue={user.company.name}
-              />
-             <br/>
-             <button className="edit-btn">Update</button>
+              <button className="edit-btn">Update</button>
             </form>
           ) : (
             <div>
               <h2>{user.name}</h2>
-              <h4> City: {user.address.city}</h4>
-              <h4 style={{ margin: "-20px 0" }}>
-                Company: {user.company.name}
-              </h4>
             </div>
           )}
           <div className="corner">

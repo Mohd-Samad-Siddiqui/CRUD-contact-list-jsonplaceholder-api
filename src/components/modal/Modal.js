@@ -7,7 +7,6 @@ const Modal = ({ cancel, close, onAdd }) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [website, setWebsite] = useState("");
-  const [city, setCity] = useState("");
 
   const submit = (e) => {
     e.preventDefault();
@@ -16,8 +15,7 @@ const Modal = ({ cancel, close, onAdd }) => {
       username.length === 0 ||
       phone.length === 0 ||
       email.length === 0 ||
-      website.length === 0 ||
-      city.length === 0
+      website.length === 0
     ) {
       alert("All the fields are mandatory");
     } else {
@@ -27,7 +25,6 @@ const Modal = ({ cancel, close, onAdd }) => {
         email,
         phone,
         website,
-        city,
       };
       onAdd(newContact);
       cancel();
@@ -84,14 +81,6 @@ const Modal = ({ cancel, close, onAdd }) => {
               placeholder="Website url"
               value={website}
               onChange={(e) => setWebsite(e.target.value)}
-            />
-            <br />
-            <input
-              type="text"
-              className="form-control"
-              placeholder="City"
-              value={city}
-              onChange={(e) => setCity(e.target.value)}
             />
           </form>
         </div>

@@ -32,8 +32,6 @@ export default function App() {
         const updatedUser = userData.map((user) => {
           if (user.id === id) {
             user.name = name;
-            user.address.city = city;
-            user.company.name = company;
           }
           return user;
         });
