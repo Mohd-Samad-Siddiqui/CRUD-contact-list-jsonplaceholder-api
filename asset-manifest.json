@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CRUD-contact-list-jsonplaceholder-api/static/css/main.d1152674.css",
+    "main.js": "/CRUD-contact-list-jsonplaceholder-api/static/js/main.f4b26559.js",
+    "index.html": "/CRUD-contact-list-jsonplaceholder-api/index.html",
+    "main.d1152674.css.map": "/CRUD-contact-list-jsonplaceholder-api/static/css/main.d1152674.css.map",
+    "main.f4b26559.js.map": "/CRUD-contact-list-jsonplaceholder-api/static/js/main.f4b26559.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1152674.css",
+    "static/js/main.f4b26559.js"
+  ]
+}
